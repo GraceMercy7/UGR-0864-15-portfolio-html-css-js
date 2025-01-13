@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <style>
+        /* General Styles */
+        body {
+            background-color: #2b1b17;
+            font-family: Arial, sans-serif;
+            color: white;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        h1 {
+            margin-top: 20px;
+            font-size: 2rem;
+            text-transform: capitalize;
+            color: white;
+        }
+
+        h1 span {
+            color: #00bfff;
+        }
+
+        .form-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        form {
+            background-color: #1c1c1c;
+            width: 60%;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .form-group {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .form-group input {
+            width: 48%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #555;
+            color: white;
+            font-size: 16px;
+        }
+
+        .form-group input::placeholder {
+            color: #ccc;
+        }
+
+        textarea {
+            width: 100%;
+            height: 100px;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #555;
+            color: white;
+            font-size: 16px;
+            resize: none;
+        }
+
+        textarea::placeholder {
+            color: #ccc;
+        }
+
+        .submit-btn {
+            background-color: #00bfff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            text-transform: capitalize;
+        }
+
+        .submit-btn:hover {
+            background-color: #009acd;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            form {
+                width: 80%;
+            }
+
+            .form-group {
+                flex-direction: column;
+            }
+
+            .form-group input {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            .submit-btn {
+                padding: 8px 16px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="Aboutme.html">About Me</a></li>
+                <li><a href="eduaction%20skill.html">Education & Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact2.html">Contact</a></li>
+                <li><a href="../other/cv.pdf" target="_blank">Download CV</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>contact<span>me</span></h1>
+    <div class="form-container">
+        <form>
+            <div class="form-group">
+                <input type="text" placeholder="First name">
+                <input type="text" placeholder="Second name">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Mobile.no">
+                <input type="email" placeholder="Email address">
+            </div>
+            <textarea placeholder="Your Message"></textarea>
+            <br>
+            <button type="submit" class="submit-btn">Submit</button>
+            <div class="social-media">
+                <a href="https://github.com/abi556" target="_blank"><img src="../images/github-icon.png" alt="GitHub"></a>
+                <a href="https://www.linkedin.com/in/abiy-hailu-a780b9294?utm_source=share&amp;utm_campaign=share_via&amp;utm_content=profile&amp;utm_medium=android_app" target="_blank"><img src="../images/linkedin-icon.png" alt="LinkedIn"></a>
+                <a href="https://x.com/Ethiopian__Soul?t=Kz16FQxEFMqbhAOX3IJGaQ&amp;s=09" target="_blank"><img src="../images/X-icon.png" alt="X"></a>
+                <a href="mailto:abiymit@outlook.com" target="_blank"><img src="../images/email-icon.png" alt="Email"></a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
