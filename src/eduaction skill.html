@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education and Skills</title>
+    <style>
+        body {
+            background-color: #000000;
+            font-family: Arial, sans-serif;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+
+        .content {
+            display: flex;
+            justify-content: space-between;
+            width: 80%;
+            border: 2px solid white;
+            padding: 20px;
+            position: relative;
+        }
+
+        .content::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            width: 2px;
+            background-color: white;
+        }
+
+        .section {
+            width: 45%;
+        }
+
+        .section h2 {
+            text-align: center;
+            text-transform: capitalize;
+            margin-bottom: 20px;
+        }
+
+        .education ul, .skills {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .education ul li {
+            margin-bottom: 10px;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .skills img {
+            width: 60px;
+            height: 60px;
+            margin: 10px;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .button {
+            background-color: #00bfff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-transform: capitalize;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+
+        .button:hover {
+            background-color: #009acd;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="Aboutme.html">About Me</a></li>
+                <li><a href="eduaction%20skill.html">Education & Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact2.html">Contact</a></li>
+                <li><a href="../other/cv.pdf" target="_blank">Download CV</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="content">
+            <div class="section education">
+                <h2>education</h2>
+                <ul>
+                    <li>software engineering temp</li>
+                    <li>free code camp fullstack</li>
+                    <li>club participation in programming</li>
+                    <li>ethiocoders.et</li>
+                </ul>
+                <div class="buttons">
+                    <button class="button">education certificate</button>
+                </div>
+            </div>
+
+            <div class="section skills">
+                <h2>skills</h2>
+                <div class="skills">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="HTML">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="CSS">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg" alt="Node.js">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="React JS">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/d/dd/MySQL_logo.svg" alt="MySQL">
+                </div>
+                <div class="buttons">
+                    <button class="button">skills certificate</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        :root {
+            --primary-color: #00ffff;
+            --text-color: #fff;
+            --background-color: #191919;
+            --font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            font-family: var(--font-family);
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+            padding: 0 1rem;
+        }
+
+        .content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .text {
+            max-width: 400px;
+        }
+
+        .text h1 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+
+        .text h1 span {
+            color: var(--primary-color);
+        }
+
+        .text p {
+            font-size: 1rem;
+            margin: 1rem 0;
+            line-height: 1.5;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            background-color: var(--primary-color);
+            color: var(--background-color);
+            text-transform: uppercase;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: transform 0.2s;
+        }
+
+        .btn:hover {
+            transform: scale(1.05);
+        }
+
+        .image {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            background-color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .image img {
+            width: 150px;
+            height: auto;
+            object-fit: cover;
+        }
+
+        @media (max-width: 768px) {
+            .content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="src/Aboutme.html">About Me</a></li>
+                <li><a href="src/eduaction%20skill.html">Education & Skills</a></li>
+                <li><a href="src/projects.html">Projects</a></li>
+                <li><a href="src/contact2.html">Contact</a></li>
+                <li><a href="other/cv.pdf" target="_blank">Download CV</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="content">
+            <div class="text">
+                <h1>Hello, it's Me<br><span>Fullstack Developer</span><br>Eyoab Addise</h1>
+                
+                    <p>I am a passionate and skilled full-stack developer with a strong foundation 
+                        in both front-end and back-end technologies. Proficient in modern frameworks
+                         and libraries, I create responsive, user-friendly interfaces and robust 
+                         server-side architectures.</p>
+                <a href="#" class="btn">Download CV</a>
+            </div>
+            <div class="image">
+                <img src="images/eu.jpg" alt="Eyoab Addise">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

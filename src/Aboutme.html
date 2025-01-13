@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <style>
+        :root {
+            --primary-color: #00ffff;
+            --text-color: #fff;
+            --background-color: #191919;
+            --secondary-bg-color: #2b2b2b;
+            --font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            font-family: var(--font-family);
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            padding: 0 1rem;
+            background-color: var(--secondary-bg-color);
+        }
+
+        .content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            gap: 2rem;
+            width: 90%;
+            max-width: 1200px;
+        }
+
+        .image {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            background-color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .image img {
+            width: 200px;
+            height: auto;
+            object-fit: cover;
+        }
+
+        .text {
+            color: var(--text-color);
+        }
+
+        .text h2 {
+            font-size: 2rem;
+            margin: 0;
+        }
+
+        .text h2 span {
+            color: var(--primary-color);
+        }
+
+        .text h3 {
+            margin: 0.5rem 0;
+            font-size: 1.2rem;
+            font-weight: normal;
+        }
+
+        .text p {
+            font-size: 1rem;
+            line-height: 1.5;
+            margin: 1rem 0;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            background-color: var(--primary-color);
+            color: var(--background-color);
+            text-transform: uppercase;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: transform 0.2s;
+        }
+
+        .btn:hover {
+            transform: scale(1.05);
+        }
+
+        @media (max-width: 768px) {
+            .content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .image {
+                margin-bottom: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="Aboutme.html">About Me</a></li>
+                <li><a href="eduaction%20skill.html">Education & Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact2.html">Contact</a></li>
+                <li><a href="../other/cv.pdf" target="_blank">Download CV</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="content">
+            <div class="image">
+                <img src="../images/eu.jpg" alt="Eyoab Addise">
+            </div>
+            <div class="text">
+                <h2>About<span> me</span></h2>
+                <h3>Fullstack Dev</h3>
+                <p>
+                    My Name is Eyoab Addise. I am a fullstack developer. 
+                    I am a student at AAU studying software engineering. 
+                    I have started this journey 5 years ago. I started working at since 2021.
+                     I have experience of building several websites and applications.
+                </p>
+                <a href="#" class="btn">See More</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
